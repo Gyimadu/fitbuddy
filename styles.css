@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Unbounded:wght@200..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Unbounded', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+/* NAVIGATION-BAR */
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: #fff;
+}
+
+.logo-container{
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.header span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 20px 30px 0 0;
+    font-size: 25px;
+}
+
+/* HOMEPAGE */
+
+.homepage{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(fitness.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome{
+    text-align: center;
+    color: #fff;
+    font-family: 'Marcellus', sans-serif;
+}
+
+.welcome p{
+    font-size: 60px;
+    padding-bottom: 30px;
+    font-family: 'Marcellus', sans-serif;
+}
+
+button{
+    padding: 10px 25px;
+    letter-spacing: 0.5px;
+    background-color: transparent;
+}
+
+button a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Marcellus', sans-serif;
+}
+
+button:hover{
+    background-color: #c4c3c33f;
+}
+
+/* FEATURES */
+
+[class*="col-"] {
+    width: 100%;
+  }
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+.feature{
+    min-height: 50vh;
+    width: 100%;
+    background-color: #0f0f0f;
+    border: 1px solid #1c1c1c;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 0 45px;
+}
+
+.feature:hover{
+    background-color: #000;
+}
+
+.feature h3{
+    font-family: 'Marcellus', sans-serif;
+    padding-bottom: 10px;
+}
+
+.feature p{
+    font-family: 'Marcellus', sans-serif;
+    padding-bottom: 20px;
+}
+
+.img-container{
+    min-height: 40vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.img-container img{
+    object-fit: cover;
+    height: auto;
+    width: 60%;
+    max-height: 200px;
+    margin-right: 0;
+}
+
+/* MISSION STATEMENT */
+
+.mission{
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.container{
+    min-height: 45vh;
+    width: 70%;
+    background-color: #000;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+}
+
+.text-container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: #fff;
+    padding: 10px 35px;
+    font-family: 'Marcellus', sans-serif;
+}
+
+.text-container h3, p{
+    font-family: 'Marcellus', sans-serif;
+    padding-bottom: 15px;
+}
+
+.image{
+    width: 50%;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 0 25px 25px 0;
+}
+
+/* FOOTER */
+
+.footer{
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    min-height: 50vh;
+    background-color: #c4c4c4;
+}
